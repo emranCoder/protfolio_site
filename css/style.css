@@ -1,0 +1,489 @@
+/*
+Template Name: de template
+Author: MD.Emran Alam
+Author URI: emaranalam.totalh.net
+Description: Our default theme for 2020 is designed to take full advantage of the flexibility of the block editor. Organizations and businesses have the ability to create dynamic landing pages with endless layouts using the group and column blocks. The centered content column and fine-tuned typography also makes it perfect for traditional blogs. Complete editor styles give you a good idea of what your content will look like, even before you publish. You can give your site a personal touch by changing the background colors and the accent color in the Customizer. The colors of all elements on your site are automatically calculated based on the colors you pick, ensuring a high, accessible color contrast for your visitors.
+Tags: one-column, custom-background, custom-colors, custom-logo, custom-menu, editor-style, featured-images, footer-widgets, full-width-template, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready, block-styles, wide-blocks, accessibility-ready
+Version: 5.1
+Text Domain: twentytwenty
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+/* This css is sepereted 4 steps */
+
+/*
+
+1.Profile
+2.Resume
+3.Portfolio
+4.contact
+
+*/
+
+*{
+	margin: 0;
+	padding: 0;
+}
+li {
+	list-style: none;
+}
+a {
+	text-decoration: none !important;
+
+}
+img {
+	max-width: 100%;
+}
+body {
+	font-family: 'open Sans', Arial;
+	background-color: #E8E8E8;
+	color: #333;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 25px;
+}
+
+/*container*/
+
+#container {
+	margin: 0 auto;
+	margin-top: 20px;
+	margin-bottom: 30px;
+	width: 856px;
+}
+
+/* end container*/
+
+/*content*/
+.content {
+	box-shadow: 0 1px 6px rgba(0, 0, 0, 0.27), 0 0 40px rgba(0, 0, 0, 0.06) inset;
+	background-color: #fff;
+	margin-top: 100px;
+}
+.pro-name {
+	display: none;
+}
+/* end content*/
+
+/*menu*/
+
+.menu-nav {
+	background: #E8E8E8;
+	height: 100px;
+	width: 100%;
+}
+.menu-nav .menu-ul {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	height: 116px;
+}
+.menu-nav .menu-ul .menu-li {
+	margin: 0px 50px;
+	padding: 30px 0px 0px 0px;
+	display: block;
+	cursor: pointer;
+	text-align: center;
+}
+.menu-nav .menu-ul .menu-li p {
+	color: #b9b9b9;
+	transition: 0.5s;
+}
+
+.menu-nav .menu-ul .menu-li i{
+	font-size: 45px;
+	color: #b9b9b9;
+	transition: 0.5s;
+}
+.menu-nav .menu-ul .menu-li:hover i{
+	color: #b35816;
+}
+.menu-nav .menu-ul .menu-li:hover p{
+	color: #b35816;
+}
+.menu-nav .menu-ul .menu-li .current{
+	background-image: linear-gradient(to top,#fff,#00000026);
+	background-repeat: no-repeat;
+	background-position: center;
+	padding: 26px;
+	overflow: hidden;
+	padding-left: 31px;
+	margin: 0px -50px;
+	color: #b35816;
+	background-color: #ffff;
+	box-shadow: 1px 2px 10px 1px #5555;
+}
+.heder-menu ul {
+	display: block !important;
+	background-color: #fff;
+	height: 500px !important;
+	position: relative;
+	z-index: 1;
+	width:  300px !important;
+	text-align: right !important;
+	position: absolute;
+	right: 0;
+	top: 10%;
+}
+.heder-menu ul {
+	transform: translateX(100%);
+	transition: 0.5s;
+}
+.heder-menu li {
+	display: block !important;
+	border-bottom: 1px solid #55555514
+}
+.heder-menu li p {
+	display: block;
+	text-align: right;
+	color: #333 !important;
+}
+.menu-icon {
+	border: 1px solid #fff;
+	width: 50px;
+	height: 50px;
+	display: flex;
+	position: absolute;
+	right: 10px;
+	text-align: center;
+	padding: 10px;
+	font-size: 50px;
+	cursor: pointer;
+	top: 2%;
+}
+.menu-box  {
+	display: none;
+}
+.icon-close {
+	display: none;
+}
+
+/* end menu*/
+
+
+/*
+
+1.Profile
+
+*/
+
+.profile {
+	background: #e69255;
+	padding: 30px 5px 10px 5px;
+	background-image: url(../image/header-shadow.png);
+	background-position: center bottom;
+	background-repeat: no-repeat;
+	overflow: hidden;
+	color: #fff;
+}
+.pro-img {
+	background-image: url(../image/photo-inner.png);
+	background-repeat: no-repeat;
+	width: 192px;
+    height: 212px;
+    padding: 12px 0 0 20px;
+    margin-top: 30px;
+}
+.pro-img img {
+	height: 200px;
+	width: 160px;
+	display: flex;
+	justify-content: center;
+}
+.profile-title {
+  margin-top: 30px;
+}
+.profile-title h3{
+	font-size: 35px;
+	font-weight: 900;
+	line-height: 1;
+}
+
+.profile-title .profile-sub-title{
+	font-size: 16px;
+	font-weight: 600;
+}
+
+.profile-title .profile-describetion{
+	font-size: 14px;
+	color: #663305;
+}
+.personal-info {
+    float: left;
+    margin-top: 30px;
+    width: 310px;
+    min-height: 230px;
+    margin-left: 10px;
+    background: url(../image/personal-info-sep.png) no-repeat left top;
+    padding: 5px 0 0 20px;
+}
+.profile-li{
+	display: table-row-group;
+	color: #663305;
+}
+.profile-li label {
+	float: left;
+	padding: 4px 6px;
+	font-weight: 600;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+}
+.profile-li span {
+	float: right;
+	width: 220px;
+	padding-top: 4px;
+	font-weight: 300;
+}
+
+.profile-li a {
+	color: #663305;
+	transition: 0.5s;
+}
+.profile-li .web-link:hover {
+	color: #971414;
+	font-weight: bold;
+}
+
+/* 
+end
+1.Profile
+
+*/
+
+/* 
+1.Resume
+
+*/
+.resume{
+	padding: 30px 10px;
+	display: none;
+}
+.resume-title h2{
+	border-bottom: 2px solid #e69255;
+	width: 50px;
+	line-height: 2;
+	font-size: 20px;
+	font-weight: bold;
+	margin-top: 20px;
+	margin-bottom: 30px;
+}
+.resume-sub-title {
+	border-left: 2px solid #e69255;
+	margin: 20px 0px;
+}
+.resume-sub-box {
+	margin-left: 10px;
+}
+.resume-sub-title h3{
+	font-size: 16px;
+	font-weight: 600;
+	display: inline;
+}
+
+.resume-sub-title span {
+	float: right;
+	display: inline;
+	font-size: 14px;
+	color: #e69255;
+}
+.left-side  h2{
+	width: 100%;
+}
+.left-side p {
+	display: inline;
+}
+.left-side span {
+	float: right;
+}
+
+/* 
+
+end
+1.Resume
+
+*/
+
+
+/* 3.Portfolio */
+.portfolio{
+	padding: 30px 10px;
+	display: none;
+}
+.portfolio-item {
+	padding: 7px 15px;
+	background-color: #666 !important;
+	border-radius: 2px;
+	margin: 20px 10px;
+	margin-top: 10px;
+	cursor: pointer;
+}
+.portfolio-item:hover {
+	background-color: #e69255 !important;
+	color: white;
+}
+.tab-active {
+	background-color: #e69255 !important;
+}
+.port-sub-title {
+	font-size: 25px;
+	border-bottom: 1px solid #5555;
+	border-top: 1px solid #5555;
+	line-height: 2.5;
+	margin-bottom: 30px;
+}
+.port-details {
+	width: 180px;
+	height: 186px;
+	background-color: #fbfbfb;
+	border-bottom: 2px solid #e5e5e5;
+	transition: 0.5s;
+	margin-bottom: 30px;
+}
+.port-img {
+	height: 120px;
+	overflow: hidden;
+}
+.port-img img{
+	width: 180px;
+	height: auto;
+	max-width: 100%;
+	display: table-cell;
+	vertical-align: top;
+}
+.port-title {
+	text-align: center;
+	padding: 10px 5px;
+}
+.port-title h2{
+	font-size: 16px;
+	font-weight: bold;
+	transition: 0.5s;
+}
+.port-title p {
+	font-size: 12px;
+	line-height: 1;
+	color: #a2a0a0;
+}
+
+.port-details:hover {
+	border-bottom-color: #e69255;
+}
+.port-details:hover h2{
+	color: #e69255;
+}
+
+/* end 3.Portfolio */
+
+/*contact*/
+.contact {
+	padding: 10px 10px;
+	padding-bottom: 30px;
+	display: none;
+}
+.contact-li a{
+	color: #333;
+	line-height: 2;
+}
+.contact-li a:hover {
+	color: #e69255;
+}
+.contact-title h2{
+	width: 100%;
+	line-height: 2;
+	font-size: 20px;
+	font-weight: bold;
+	margin-top: 20px;
+	margin-bottom: 30px;
+}
+.contact-title:before{
+	content: "";
+	position: absolute;
+	top: 16%;
+	border-bottom: 2px solid #e69255;
+	width: 50px;
+	display: block;
+}
+.contact-form label {
+	margin-top: 10px;
+	color: #999;
+}
+.contact-form input{
+	width: 100%;
+	padding: 5px 15px;
+	border: 1px solid #5555;
+	border-radius: 5px;
+	transition: 0.5s;
+}
+.contact-form textarea{
+	width: 100%;
+	padding: 5px 15px;
+	border: 1px solid #5555;
+	height: 130px;
+	border-radius: 5px;
+	resize: none;
+	transition: 0.5s;
+}
+.contact-form input:focus {
+	border-color: #e69255;
+}
+.contact-form textarea:focus {
+	border-color: #e69255;
+}
+/* end contact*/
+
+/*footer*/
+footer {
+	margin: 30px 10px;
+}
+/* end footer*/
+
+/* light box */
+.lb-close {
+  top: 0px;
+  position: absolute;
+  right: 5%;
+}
+.lb-nav:hover a.lb-next{
+	opacity: 1;
+}
+.lb-nav:hover a.lb-prev{
+	opacity: 1;
+}
+
+/* end light box */
+
+@media screen and (max-width: 969px) {
+	.personal-info {
+		background: transparent;
+	}
+	#container {
+		width: 100%;
+	}
+	.content {
+		margin-top: 0px;
+	}
+	.port-details {
+		width: 300px;
+		height: 300px;
+		margin: auto;
+		margin-bottom: 30px;
+	}
+	.port-details img {
+		width: 100%;
+	}
+	.port-img {
+		height: 200px;
+	}
+}
+@media screen and (max-width: 720px) {
+	.menu-nav {
+		display: none;
+	}
+	.heder-menu {
+		display: block;
+	}
+	.menu-box {
+		display: block;
+	}
+}
